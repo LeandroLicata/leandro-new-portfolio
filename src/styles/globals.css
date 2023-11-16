@@ -1,6 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Press+Start+2P&display=swap");
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -17,11 +20,47 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: "Press Start 2P", sans-serif;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 15000;
+  top: 0;
+  background-size: 4px;
+  pointer-events: none;
+  background: repeating-linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.4) 1px, transparent 1px, transparent 2px);
+  opacity: .4;
+}
+
+
+.neon-text-1 {
+  text-shadow: 0 0 10px #00a7e1, 0 0 20px #00a7e1, 0 0 30px #00a7e1;
+  animation: neon-glow-1 1.5s ease-in-out infinite alternate, glitch 1s infinite;
+}
+
+@keyframes neon-glow-1 {
+  0% {
+    text-shadow: 0 0 10px #00a7e1, 0 0 20px #00a7e1, 0 0 30px #00a7e1;
+  }
+  100% {
+    text-shadow: 0 0 5px #00a7e1, 0 0 10px #00a7e1, 0 0 15px #00a7e1;
+  }
+}
+
+.neon-text-2 {
+  text-shadow: 0 0 10px #ff1493, 0 0 20px #ff1493, 0 0 30px #ff1493;
+  animation: neon-glow-2 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon-glow-2 {
+  0% {
+    text-shadow: 0 0 10px #ff1493, 0 0 20px #ff1493, 0 0 30px #ff1493;
+  }
+  100% {
+    text-shadow: 0 0 5px #ff1493, 0 0 10px #ff1493, 0 0 15px #ff1493;
+  }
 }
