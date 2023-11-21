@@ -9,25 +9,25 @@ const Navbar = ({ setCurrentSection }: NavbarProps) => {
     <nav className="w-full fixed flex justify-center">
       <ul className="text-light-blue flex justify-between items-center space-x-11 text-xl p-4">
         <li
-          className="hover:text-pink"
+          className="hover:text-pink cursor-pointer"
           onClick={() => setCurrentSection("home")}
         >
           Home
         </li>
         <li
-          className="hover:text-pink"
+          className="hover:text-pink cursor-pointer"
           onClick={() => setCurrentSection("about")}
         >
           About
         </li>
         <li
-          className="hover:text-pink"
+          className="hover:text-pink cursor-pointer"
           onClick={() => setCurrentSection("projects")}
         >
           Proyectos
         </li>
         <li
-          className="hover:text-pink"
+          className="hover:text-pink cursor-pointer"
           onClick={() => setCurrentSection("skills")}
         >
           Skills
