@@ -1,8 +1,8 @@
 const AboutSection = () => {
   return (
     <section className="">
-      <div className="about-section about-content-card text-light-blue p-5 overflow-auto">
-        <div className="text-xs">
+      <div className="about-section about-content-card text-light-blue p-5 overflow-auto text-sm">
+        <div className="text-sm">
           <h1 className="text-xl">Acerca de mí</h1>
           <p className="pt-5">
             ¡Hola! Soy <span className="text-pink">Leandro Licata</span>, un
