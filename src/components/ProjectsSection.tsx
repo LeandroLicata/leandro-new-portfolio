@@ -14,7 +14,7 @@ const projectsData = [
   {
     title: "Gamepedia",
     description:
-      "Gamepedia es un sitio web donde los usuarios pueden acceder a información y ver capturas de pantalla de juegos, tanto clásicos como los últimos lanzamientos. Pueden buscar juegos por nombre, plataforma o género. Además, los usuarios tienen la opción de agregar juegos si así lo desean, y también pueden eliminarlos. Este proyecto es completamente responsive, lo que significa que se puede acceder sin problemas desde cualquier dispositivo. En la realización del proyecto, utilicé tecnologías como Node.js, MongoDB, Mongoose y Express para el Back-End, y React, Redux Toolkit, HTML y Bootstrap para el Front-End.",
+      "Gamepedia es un sitio web integral que proporciona información detallada y visualmente enriquecedora sobre una amplia variedad de videojuegos. Durante la ejecución de este proyecto, implementé tecnologías avanzadas en el desarrollo del Back-End, como Node.js, MongoDB, Mongoose y Express. Además, para enriquecer aún más la base de datos con datos actualizados sobre los videojuegos, integré la API RAWG. Vale destacar que los usuarios también tienen la opción de agregar sus propios videojuegos, brindando así una experiencia más personalizada y participativa. En el Front-End, me apoyé en tecnologías modernas como React, Redux Toolkit, HTML y Bootstrap para garantizar una experiencia de usuario atractiva y funcional.",
     image: "/Gamepedia.jpg",
     links: [
       {
@@ -54,15 +54,7 @@ const ProjectsSection = () => {
                   alt={`${project.title} Project Image`}
                   className="w-full mb-4 md:mb-0"
                 />
-              </div>
-              <div className="md:w-1/2 md:pl-8">
-                <h1 className="text-xl font-bold mb-2 text-pink">
-                  {project.title}
-                </h1>
-                <p className="mb-4 overflow-auto text-sm h-20">
-                  {project.description}
-                </p>
-                <div className="">
+                <div className="pt-3">
                   {project.links.map((link, linkIndex) => (
                     <a
                       key={linkIndex}
@@ -77,6 +69,25 @@ const ProjectsSection = () => {
                     </a>
                   ))}
                 </div>
+              </div>
+              <div className="md:w-1/2 md:pl-8">
+                <h1 className="text-xl font-bold mb-2 text-pink">
+                  {project.title}
+                </h1>
+                <p className="mb-4 overflow-auto text-sm h-[16rem]">
+                  {project.description.split(" ").map((word, wordIndex) =>
+                    // Aplicar color solo a ciertas palabras
+                    word === "Gamepedia" ||
+                    word === "React" ||
+                    word === "Node.js," ? (
+                      <span key={wordIndex} className="text-pink">
+                        {word}{" "}
+                      </span>
+                    ) : (
+                      <span key={wordIndex}>{word} </span>
+                    )
+                  )}
+                </p>
               </div>
             </div>
           </div>
