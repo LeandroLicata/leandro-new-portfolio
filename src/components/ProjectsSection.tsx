@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -13,8 +13,33 @@ const projectsData = [
   },
   {
     title: "Gamepedia",
-    description:
-      "Gamepedia es un sitio web integral que proporciona información detallada y visualmente enriquecedora sobre una amplia variedad de videojuegos. Durante la ejecución de este proyecto, implementé tecnologías avanzadas en el desarrollo del Back-End, como Node.js, MongoDB, Mongoose y Express. Además, para enriquecer aún más la base de datos con datos actualizados sobre los videojuegos, integré la API RAWG. Vale destacar que los usuarios también tienen la opción de agregar sus propios videojuegos, brindando así una experiencia más personalizada y participativa. En el Front-End, me apoyé en tecnologías modernas como React, Redux Toolkit, HTML y Bootstrap para garantizar una experiencia de usuario atractiva y funcional.",
+    description: (
+      <>
+        <p>
+          Proyecto personal que desarrollé utilizando la{" "}
+          <span className="text-pink">API de RAWG</span>, en que los usarios
+          pueden explorar una amplia variedad de videojuegos, viendo información
+          detallada e imágenes de estos. Pudiendo realizar busquedas con
+          diversos filtros y agregar sus propios juegos a la base de datos.
+        </p>
+        <p className="pt-2">
+          Durante la ejecución de este proyecto, implementé diversas tecnologías
+          en el desarrollo del <span className="text-pink">Back-End</span>, como{" "}
+          <span className="text-pink">Node.js</span>,{" "}
+          <span className="text-pink">MongoDB</span>,
+          <span className="text-pink">Mongoose</span> y{" "}
+          <span className="text-pink">Express</span>.
+        </p>
+        <p className="pt-2">
+          En el <span className="text-pink">Front-End</span>, me apoyé de
+          tecnologías como <span className="text-pink">React</span>,{" "}
+          <span className="text-pink">Redux Toolkit</span>,{" "}
+          <span className="text-pink">HTML</span> y{" "}
+          <span className="text-pink">Bootstrap</span> para garantizar una
+          experiencia de usuario atractiva y funcional.
+        </p>
+      </>
+    ),
     image: "/Gamepedia.jpg",
     links: [
       {
@@ -75,18 +100,7 @@ const ProjectsSection = () => {
                   {project.title}
                 </h1>
                 <p className="mb-4 overflow-auto text-sm h-[16rem]">
-                  {project.description.split(" ").map((word, wordIndex) =>
-                    // Aplicar color solo a ciertas palabras
-                    word === "Gamepedia" ||
-                    word === "React" ||
-                    word === "Node.js," ? (
-                      <span key={wordIndex} className="text-pink">
-                        {word}{" "}
-                      </span>
-                    ) : (
-                      <span key={wordIndex}>{word} </span>
-                    )
-                  )}
+                  {project.description}
                 </p>
               </div>
             </div>
