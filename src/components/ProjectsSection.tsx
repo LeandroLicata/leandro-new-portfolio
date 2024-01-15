@@ -7,7 +7,46 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 const projectsData = [
   {
     title: "Timbring",
-    description: "Descripción del proyecto Timbring...",
+    description: (
+      <>
+        <p>Sitio web en el trabajé durante 3 meses como pasante.</p>
+        <p className="mt-2">
+          <span className="text-pink">Timbring</span> es un Servicio de
+          Optimización de Entregas en E-commerce: Mejorando la experiencia del
+          comprador al resolver entregas fallidas.
+        </p>
+        <p className="mt-2">
+          Desarrollé la página de inicio, incluyendo sus secciones, la barra de
+          navegación y diseño responsivo utilizando{" "}
+          <span className="text-pink">Next.js</span>,{" "}
+          <span className="text-pink">TypeScript</span> y {" "}
+          <span className="text-pink">Tailwind CSS</span>.
+        </p>
+        <p className="mt-2">
+          Elaboré el formulario de registro, integrando todas sus validaciones y
+          empleando <span className="text-pink">Redux Toolkit</span> para el
+          manejo del estado global y las peticiones al backend.
+        </p>
+        <p className="mt-2">
+          Brindé asistencia a mis compañeros, apoyándoles principalmente en
+          temas relacionados con <span className="text-pink">Next</span> y{" "}
+          <span className="text-pink">Redux Toolkit</span>.
+        </p>
+        <p className="mt-2">
+          Migré la autenticación de <span className="text-pink">Auth0</span> a{" "}
+          <span className="text-pink">NextAuth</span>. Esta migración permitió
+          una autenticación más rápida y confiable para los usuarios, lo que
+          contribuyó a una experiencia general más fluida en la plataforma.
+        </p>
+        <p className="mt-2">
+          Desarrollé un sistema integral de recuperación de contraseñas
+          utilizando la librería <span className="text-pink">Nodemailer</span>.
+          Este sistema permite a los usuarios restablecer sus contraseñas de
+          manera segura y eficiente en caso de olvido o pérdida de acceso a sus
+          cuentas.
+        </p>
+      </>
+    ),
     image: "/Timbring.jpg",
     links: [{ title: "Link", url: "https://www.timbring.com/" }],
   },
