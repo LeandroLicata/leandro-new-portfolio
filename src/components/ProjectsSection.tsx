@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -19,7 +19,7 @@ const projectsData = [
           Desarrollé la página de inicio, incluyendo sus secciones, la barra de
           navegación y diseño responsivo utilizando{" "}
           <span className="text-pink">Next.js</span>,{" "}
-          <span className="text-pink">TypeScript</span> y {" "}
+          <span className="text-pink">TypeScript</span> y{" "}
           <span className="text-pink">Tailwind CSS</span>.
         </p>
         <p className="mt-2">
@@ -95,6 +95,51 @@ const projectsData = [
       },
     ],
   },
+  {
+    title: "Novelty Books",
+    description: (
+      <>
+        <p>
+          Como parte de mi formación en programación, participé en un proyecto
+          final grupal llamado <span className="text-pink">Novelty Books</span>{" "}
+          junto a mis compañeros de <span className="text-pink">Henry</span>.
+        </p>
+        <p className="pt-2">
+          En este proyecto utilizamos tecnologías como{" "}
+          <span className="text-pink">JavaScript</span>,{" "}
+          <span className="text-pink">MongoDB</span>,
+          <span className="text-pink">Mongoose</span>,{" "}
+          <span className="text-pink">Node</span>,{" "}
+          <span className="text-pink">Express</span>,{" "}
+          <span className="text-pink">Cloudinary</span>,{" "}
+          <span className="text-pink">NodeMailer</span>,{" "}
+          <span className="text-pink">React</span>,{" "}
+          <span className="text-pink">Next</span>,{" "}
+          <span className="text-pink">Next Auth</span>,{" "}
+          <span className="text-pink">Stripe</span>,{" "}
+          <span className="text-pink">Bootstrap</span>,{" "}
+          <span className="text-pink">CSS</span> y{" "}
+          <span className="text-pink">HTML5</span> para desarrollar un
+          e-commerce de libros físicos.
+        </p>
+      </>
+    ),
+    image: "/Novelty_Books.jpg",
+    links: [
+      {
+        title: "Repositorio Front-End",
+        url: "https://github.com/Chitichi/PFFront",
+      },
+      {
+        title: "Repositorio Back-End",
+        url: "https://github.com/Arthaz1245/ProyectoFinalGrupo14Backend",
+      },
+      {
+        title: "Video Presentación",
+        url: "https://www.youtube.com/watch?v=6JF0WrhJlw0",
+      },
+    ],
+  },
 ];
 
 const ProjectsSection = () => {
@@ -138,7 +183,7 @@ const ProjectsSection = () => {
                 <h1 className="text-xl font-bold mb-2 text-pink">
                   {project.title}
                 </h1>
-                <p className="mb-4 overflow-auto text-sm h-[16rem]">
+                <p className="mb-4 overflow-auto text-sm h-[16rem] pr-1">
                   {project.description}
                 </p>
               </div>
