@@ -51,6 +51,37 @@ const projectsData = [
     links: [{ title: "Link", url: "https://www.timbring.com/" }],
   },
   {
+    title: "Cocktail App",
+    description: (
+      <>
+        <p>
+          Proyecto personal de Front-End en desarrollo en el cual consumo datos
+          de una <span className="text-pink">API(TheCocktailDB)</span>. De
+          momento podemos buscar tragos por nombre. Planeo implementar mas
+          funcionalidades como un filtro para poder buscar por ingredientes y
+          categorías.
+        </p>
+        <p className="pt-2">
+          Para realización de este proyecto utilicé{" "}
+          <span className="text-pink">React</span> con{" "}
+          <span className="text-pink">Styled Components</span>y{" "}
+          <span className="text-pink">Redux Toolkit</span>.
+        </p>
+      </>
+    ),
+    image: "/Cocktail_App.jpg",
+    links: [
+      {
+        title: "Repositorio",
+        url: "https://github.com/LeandroLicata/cocktail-app",
+      },
+      {
+        title: "Deploy",
+        url: "https://cocktail-app-blond.vercel.app/",
+      },
+    ],
+  },
+  {
     title: "Gamepedia",
     description: (
       <>
