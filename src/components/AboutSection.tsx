@@ -20,14 +20,14 @@ const AboutSection = () => {
             explorando herramientas como Bootstrap, Next, MongoDB y Cloudinary
             para ampliar mi conjunto de habilidades.
           </p>
-          <p className="pt-5">
+          {/* <p className="pt-5">
             Mi experiencia se ha enriquecido aún más trabajando en proyectos del
             mundo real en <span className="text-pink">Timbring</span>, donde
             perfeccioné mis habilidades y adquirí nuevas competencias en
             TypeScript, TailwindCSS y Nodemailer. Trabajar en equipo con
             metodologías ágiles Scrum fue una experiencia valiosa que reforzó mi
             enfoque colaborativo y orientado a resultados.
-          </p>
+          </p> */}
           <p className="pt-5">
             Actualmente, estoy en la búsqueda de nuevas oportunidades laborales
             en el mundo de la programación. Estoy convencido de que mi
