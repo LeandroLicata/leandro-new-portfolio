@@ -4,8 +4,8 @@ import IconGrid from "./IconGrid";
 const SkillsSection = () => {
   return (
     <section>
-      <div className="skills-section skills-content-card text-light-blue p-5 overflow-auto text-sm">
-        <h1>Mi aplicación de iconos</h1>
+      <div className="skills-section skills-content-card text-light-blue p-3 overflow-auto">
+        <h1 className="pl-8 text-xl pb-3 text-blue-neon">Mi stack de tecnologías:</h1>
         <IconGrid />
       </div>
     </section>

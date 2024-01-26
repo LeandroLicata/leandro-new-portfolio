@@ -120,7 +120,7 @@ body::after {
   max-height: 75%;
   position: absolute;
   left: 15%;
-  margin-top: 120px;
+  margin-top: 100px;
   /* -webkit-box-shadow: inset 200px 21px 194px 20px #12a6c03b;
   -moz-box-shadow: inset 200px 21px 194px 20px #c012b73b;
   box-shadow: inset 200px 21px 194px 20px #12c0953b; */
@@ -164,7 +164,7 @@ body::after {
 }
 
 .work-content-card {
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/descarga.gif");
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/star-wars.gif");
   background-repeat: no-repeat;
   background-size: cover;
   border-left: 3px solid #d714fe;
@@ -172,7 +172,7 @@ body::after {
   width: 70%;
   /* text-align: center; */
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 120px;
   /* -webkit-box-shadow: inset 200px 21px 194px 20px #12a6c03b;
   -moz-box-shadow: inset 200px 21px 194px 20px #c012b73b;
   box-shadow: inset 200px 21px 194px 20px #12c0953b; */
@@ -195,7 +195,7 @@ body::after {
   max-height: 75%;
   position: absolute;
   left: 15%;
-  margin-top: 120px;
+  margin-top: 100px;
   /* -webkit-box-shadow: inset 200px 21px 194px 20px #12a6c03b;
   -moz-box-shadow: inset 200px 21px 194px 20px #c012b73b;
   box-shadow: inset 200px 21px 194px 20px #12c0953b; */
@@ -222,7 +222,7 @@ body::after {
 }
 
 .skills-section {
-  background: url("/about.gif");
+  background: url("/descarga.gif");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 0;

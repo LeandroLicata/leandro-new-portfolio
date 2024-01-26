@@ -7,18 +7,18 @@ interface NavbarProps {
 const Navbar = ({ setCurrentSection }: NavbarProps) => {
   return (
     <nav className="w-full fixed flex justify-center">
-      <ul className="text-light-blue flex justify-between items-center space-x-11 text-xl p-4">
+      <ul className="text-light-blue flex justify-between items-center space-x-9 text-xl p-4">
         <li
           className="hover:text-pink cursor-pointer"
           onClick={() => setCurrentSection("home")}
         >
-          Home
+          Inicio
         </li>
         <li
           className="hover:text-pink cursor-pointer"
           onClick={() => setCurrentSection("about")}
         >
-          About
+          Acerca
         </li>
         <li
           className="hover:text-pink cursor-pointer"
@@ -30,7 +30,7 @@ const Navbar = ({ setCurrentSection }: NavbarProps) => {
           className="hover:text-pink cursor-pointer"
           onClick={() => setCurrentSection("skills")}
         >
-          Skills
+          Tecnologías
         </li>
       </ul>
     </nav>

@@ -46,9 +46,9 @@ const IconGrid: React.FC = () => {
   return (
     <div className="grid grid-cols-4 gap-4">
       {items.map((item, index) => (
-        <div key={index} className="p-4 bg-gray-200 text-center">
-          <span>{item.name}</span>
-          {item.icon}
+        <div key={index} className="flex flex-col p-1 items-center">
+          <span className="text-5xl text-pink">{item.icon}</span>
+          <span className="text-sm text-center pt-1">{item.name}</span>
         </div>
       ))}
     </div>
