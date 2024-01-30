@@ -1,9 +1,44 @@
-import React from "react";
+import React, { MouseEventHandler } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 import projectsData from "./projectsData";
+
+interface ArrowProps {
+  onClick: MouseEventHandler;
+}
+
+const arrowStyles: React.CSSProperties = {
+  position: "absolute",
+  top: "50%",
+  transform: "translateY(-50%)",
+  zIndex: 1,
+  cursor: "pointer",
+  fontSize: "48px",
+  color: "white",
+};
+
+const NextArrow: React.FC<ArrowProps> = ({ onClick }) => (
+  <div
+    className="slick-arrow"
+    style={{ ...arrowStyles, right: "-50px" }}
+    onClick={onClick}
+  >
+    <SlArrowRight />
+  </div>
+);
+
+const PrevArrow: React.FC<ArrowProps> = ({ onClick }) => (
+  <div
+    className="slick-arrow"
+    style={{ ...arrowStyles, left: "-50px" }}
+    onClick={onClick}
+  >
+    <SlArrowLeft />
+  </div>
+);
 
 const ProjectsSection = () => {
   const settings = {
@@ -12,10 +47,24 @@ const ProjectsSection = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    nextArrow: (
+      <NextArrow
+        onClick={function (event: React.MouseEvent<Element, MouseEvent>): void {
+          throw new Error("Function not implemented.");
+        }}
+      />
+    ),
+    prevArrow: (
+      <PrevArrow
+        onClick={function (event: React.MouseEvent<Element, MouseEvent>): void {
+          throw new Error("Function not implemented.");
+        }}
+      />
+    ),
   };
 
   return (
-    <section className="work-content-card">
+    <section className="work-content-card relative">
       <Slider {...settings}>
         {projectsData.map((project, index) => (
           <div key={index} className="p-8 text-light-blue">

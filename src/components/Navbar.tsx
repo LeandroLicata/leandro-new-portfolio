@@ -7,7 +7,7 @@ interface NavbarProps {
 const Navbar = ({ setCurrentSection }: NavbarProps) => {
   return (
     <nav className="w-full fixed flex justify-center">
-      <ul className="text-light-blue flex justify-between items-center space-x-9 text-xl p-4">
+      <ul className="text-light-blue flex justify-between items-center space-x-9 text-lg p-4">
         <li
           className="hover:text-pink cursor-pointer"
           onClick={() => setCurrentSection("home")}

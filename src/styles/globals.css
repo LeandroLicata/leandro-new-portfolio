@@ -164,7 +164,8 @@ body::after {
 }
 
 .work-content-card {
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/star-wars.gif");
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/star-wars.gif");
   background-repeat: no-repeat;
   background-size: cover;
   border-left: 3px solid #d714fe;
