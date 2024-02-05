@@ -145,8 +145,8 @@ body::after {
 }
 
 .about-section {
-  /* background: url("/hacker.jpg"); */
-  background-color: gray;
+  background: url("/cyberpunk.jpg");
+  /* background-color: black; */
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 0;
@@ -219,8 +219,8 @@ body::after {
 }
 
 .skills-section {
-  background: url("/Mask.webp");
-  /* background-color: gray; */
+  background: url("/coding.png");
+  /* background-color: black; */
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 0;

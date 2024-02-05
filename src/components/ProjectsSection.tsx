@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
+import { RxDoubleArrowLeft } from "react-icons/rx";
 import projectsData from "./projectsData";
 
 interface ArrowProps {
@@ -16,14 +17,14 @@ const arrowStyles: React.CSSProperties = {
   transform: "translateY(-50%)",
   zIndex: 1,
   cursor: "pointer",
-  fontSize: "48px",
+  fontSize: "90px",
   color: "white",
 };
 
 const NextArrow: React.FC<ArrowProps> = ({ onClick }) => (
   <div
     className="slick-arrow"
-    style={{ ...arrowStyles, right: "-50px" }}
+    style={{ ...arrowStyles, right: "-100px" }}
     onClick={onClick}
   >
     <SlArrowRight />
@@ -33,10 +34,11 @@ const NextArrow: React.FC<ArrowProps> = ({ onClick }) => (
 const PrevArrow: React.FC<ArrowProps> = ({ onClick }) => (
   <div
     className="slick-arrow"
-    style={{ ...arrowStyles, left: "-50px" }}
+    style={{ ...arrowStyles, left: "-100px" }}
     onClick={onClick}
   >
     <SlArrowLeft />
+    {/* <RxDoubleArrowLeft /> */}
   </div>
 );
 
@@ -47,17 +49,20 @@ const ProjectsSection = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    pauseOnHover: true,
     nextArrow: (
       <NextArrow
         onClick={function (event: React.MouseEvent<Element, MouseEvent>): void {
-          throw new Error("Function not implemented.");
+          // throw new Error("Function not implemented.");
         }}
       />
     ),
     prevArrow: (
       <PrevArrow
         onClick={function (event: React.MouseEvent<Element, MouseEvent>): void {
-          throw new Error("Function not implemented.");
+          // throw new Error("Function not implemented.");
         }}
       />
     ),
