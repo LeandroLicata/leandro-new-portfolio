@@ -86,7 +86,6 @@ const ProjectsSection = () => {
                     >
                       {link.title}
                       <FaExternalLinkAlt className="ml-1" />{" "}
-                      {/* Ajusta el espacio entre el título y el icono según sea necesario */}
                     </a>
                   ))}
                 </div>
@@ -95,7 +94,7 @@ const ProjectsSection = () => {
                 <h1 className="text-xl font-bold mb-2 text-pink">
                   {project.title}
                 </h1>
-                <p className="mb-4 overflow-auto text-sm h-[16rem] pr-1">
+                <p className="mb-4 overflow-auto text-sm h-[16.5rem] pr-1">
                   {project.description}
                 </p>
               </div>

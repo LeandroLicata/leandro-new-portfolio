@@ -83,7 +83,7 @@ body::after {
 }
 
 .greetings {
-  background: url("/hacker.gif");
+  background: url("/hacker.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -117,14 +117,12 @@ body::after {
   border-left: 3px solid #d714fe;
   border-right: 3px solid #d714fe;
   width: 70%;
-  max-height: 75%;
   position: absolute;
   left: 15%;
-  margin-top: 100px;
-  /* -webkit-box-shadow: inset 200px 21px 194px 20px #12a6c03b;
-  -moz-box-shadow: inset 200px 21px 194px 20px #c012b73b;
-  box-shadow: inset 200px 21px 194px 20px #12c0953b; */
+  top: 55%;
+  transform: translateY(-50%);
 }
+
 
 .about-content-card::before {
   content: " ";
@@ -147,12 +145,13 @@ body::after {
 }
 
 .about-section {
-  background: url("/about.gif");
+  /* background: url("/hacker.jpg"); */
+  background-color: gray;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 0;
   overflow: auto;
-  max-height: 75%;
+  /* max-height: 75%; */
 }
 
 .about-section::before {
@@ -165,7 +164,7 @@ body::after {
 
 .work-content-card {
   background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("/star-wars.gif");
+    url("/star-wars.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-left: 3px solid #d714fe;
@@ -193,13 +192,10 @@ body::after {
   border-left: 3px solid #d714fe;
   border-right: 3px solid #d714fe;
   width: 70%;
-  max-height: 75%;
   position: absolute;
   left: 15%;
-  margin-top: 100px;
-  /* -webkit-box-shadow: inset 200px 21px 194px 20px #12a6c03b;
-  -moz-box-shadow: inset 200px 21px 194px 20px #c012b73b;
-  box-shadow: inset 200px 21px 194px 20px #12c0953b; */
+  top: 55%;
+  transform: translateY(-50%);
 }
 
 .skills-content-card::before {
@@ -223,12 +219,13 @@ body::after {
 }
 
 .skills-section {
-  background: url("/descarga.gif");
+  background: url("/Mask.webp");
+  /* background-color: gray; */
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 0;
   overflow: auto;
-  max-height: 75%;
+  /* max-height: 75%; */
 }
 
 .skills-section::before {
@@ -238,3 +235,9 @@ body::after {
   opacity: 0.7;
   z-index: -1;
 }
+
+/* @media (max-width: 768px) {
+  .content-card {
+    width: 90%;
+  }
+} */
