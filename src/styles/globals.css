@@ -18,7 +18,7 @@
 
 body {
   font-family: "Press Start 2P", sans-serif;
-  background-image: url("/background.gif");
+  background-image: url("/background.jpg");
   min-height: 100vh;
   background-size: cover;
   background-position: center;
@@ -171,8 +171,11 @@ body::after {
   border-right: 3px solid #d714fe;
   width: 70%;
   /* text-align: center; */
+  position: absolute;
   margin: 0 auto;
-  margin-top: 120px;
+  /* margin-top: 55%; */
+  top: 55%;
+  transform: translateY(-50%);
   /* -webkit-box-shadow: inset 200px 21px 194px 20px #12a6c03b;
   -moz-box-shadow: inset 200px 21px 194px 20px #c012b73b;
   box-shadow: inset 200px 21px 194px 20px #12c0953b; */
@@ -219,7 +222,7 @@ body::after {
 }
 
 .skills-section {
-  background: url("/coding.png");
+  background: url("/background-2.jpg");
   /* background-color: black; */
   background-repeat: no-repeat;
   background-size: cover;
@@ -235,6 +238,23 @@ body::after {
   opacity: 0.7;
   z-index: -1;
 }
+
+@keyframes slide {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px); /* Mueve la flecha hacia arriba */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.slider-arrow {
+  animation: slide 2s infinite; /* Ajusta la duración y otras propiedades según tus preferencias */
+}
+
 
 /* @media (max-width: 768px) {
   .content-card {

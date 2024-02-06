@@ -4,7 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
-import { RxDoubleArrowLeft } from "react-icons/rx";
 import projectsData from "./projectsData";
 
 interface ArrowProps {
@@ -13,7 +12,7 @@ interface ArrowProps {
 
 const arrowStyles: React.CSSProperties = {
   position: "absolute",
-  top: "50%",
+  top: "40%",
   transform: "translateY(-50%)",
   zIndex: 1,
   cursor: "pointer",
@@ -23,7 +22,7 @@ const arrowStyles: React.CSSProperties = {
 
 const NextArrow: React.FC<ArrowProps> = ({ onClick }) => (
   <div
-    className="slick-arrow"
+    className="slick-arrow slider-arrow"
     style={{ ...arrowStyles, right: "-100px" }}
     onClick={onClick}
   >
@@ -33,7 +32,7 @@ const NextArrow: React.FC<ArrowProps> = ({ onClick }) => (
 
 const PrevArrow: React.FC<ArrowProps> = ({ onClick }) => (
   <div
-    className="slick-arrow"
+    className="slick-arrow slider-arrow"
     style={{ ...arrowStyles, left: "-100px" }}
     onClick={onClick}
   >
@@ -49,9 +48,9 @@ const ProjectsSection = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    pauseOnHover: true,
+    // autoplay: true,
+    // autoplaySpeed: 5000,
+    // pauseOnHover: true,
     nextArrow: (
       <NextArrow
         onClick={function (event: React.MouseEvent<Element, MouseEvent>): void {
