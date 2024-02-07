@@ -252,7 +252,7 @@ body::after {
 }
 
 .slider-arrow {
-  animation: slide 2s infinite; /* Ajusta la duración y otras propiedades según tus preferencias */
+  animation: slide 2s infinite;
 }
 
 

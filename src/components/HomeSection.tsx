@@ -1,19 +1,20 @@
 import { FaLinkedin, FaGithub, FaWhatsapp, FaFilePdf } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 const HomeSection = () => {
   return (
-    <section className="">
+    <section >
       <div className="greetings content-card px-10 py-10 flex">
         <div className="greetings-title text-light-blue text-3xl flex-1">
-          <h1 className="">Hola!</h1>
-          <h1 className="">Mi Nombre es</h1>
-          <span className="text-pink">Leandro Licata</span>
-          <h1 className="">Desarrollador Web</h1>
-          <h1 className="pt-5 text-xl">
+          <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.5 }}>Hola!</motion.h1>
+          <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.6 }}>Mi Nombre es</motion.h1>
+          <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.7 }} className="text-pink">Leandro Licata</motion.span>
+          <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.8 }}>Desarrollador Web</motion.h1>
+          <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.9 }} className="pt-5 text-xl">
             Transformo ideas en experiencias digitales.
-          </h1>
-          <div className="text-5xl pt-8 flex space-x-4 text-blue-neon justify-center">
+          </motion.h1 >
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 1 }} className="text-5xl pt-8 flex space-x-4 text-blue-neon justify-center">
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -54,16 +55,16 @@ const HomeSection = () => {
             >
               <FaFilePdf />
             </a>
-          </div>
+          </motion.div>
         </div>
-        <div className="greetings-title flex-0 flex items-center justify-center relative">
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.5 }} className="greetings-title flex-0 flex items-center justify-center relative">
           <div className="static-overlay"></div>
           <img
             src="/profile.jpeg"
             width={320}
             className="border-4 border-gradient relative z-10"
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );
