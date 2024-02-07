@@ -1,37 +1,47 @@
 import { Dispatch, SetStateAction } from "react";
+import { motion } from "framer-motion";
 
-interface NavbarProps {
-  setCurrentSection: Dispatch<SetStateAction<string>>;
-}
 
-const Navbar = ({ setCurrentSection }: NavbarProps) => {
+const Navbar = ({ setCurrentSection }) => {
   return (
     <nav className="w-full fixed flex justify-center">
       <ul className="text-light-blue flex justify-between items-center space-x-9 text-lg p-4 bg-black">
-        <li
+        <motion.li
           className="hover:text-pink cursor-pointer"
           onClick={() => setCurrentSection("home")}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
         >
           Inicio
-        </li>
-        <li
+        </motion.li>
+        <motion.li
           className="hover:text-pink cursor-pointer"
           onClick={() => setCurrentSection("about")}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
         >
           Acerca
-        </li>
-        <li
+        </motion.li>
+        <motion.li
           className="hover:text-pink cursor-pointer"
           onClick={() => setCurrentSection("projects")}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
         >
           Proyectos
-        </li>
-        <li
+        </motion.li>
+        <motion.li
           className="hover:text-pink cursor-pointer"
           onClick={() => setCurrentSection("skills")}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
         >
           Tecnologías
-        </li>
+        </motion.li>
       </ul>
     </nav>
   );
