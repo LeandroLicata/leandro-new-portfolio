@@ -7,14 +7,14 @@ const HomeSection = () => {
     <section >
       <div className="greetings content-card px-10 py-10 flex">
         <div className="greetings-title text-light-blue text-3xl flex-1">
-          <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.5 }}>Hola!</motion.h1>
-          <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.6 }}>Mi Nombre es</motion.h1>
-          <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.7 }} className="text-pink">Leandro Licata</motion.span>
-          <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.8 }}>Desarrollador Web</motion.h1>
-          <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.9 }} className="pt-5 text-xl">
+          <motion.h1 initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 0.5 }}>Hola!</motion.h1>
+          <motion.h1 initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 0.7 }}>Mi Nombre es</motion.h1>
+          <motion.span initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 0.9 }} className="text-pink">Leandro Licata</motion.span>
+          <motion.h1 initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 1.1 }}>Desarrollador Web</motion.h1>
+          <motion.h1 initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 1.3 }} className="pt-5 text-xl">
             Transformo ideas en experiencias digitales.
           </motion.h1 >
-          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 1 }} className="text-5xl pt-8 flex space-x-4 text-blue-neon justify-center">
+          <motion.div initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 1.5 }} className="text-5xl pt-8 flex space-x-4 text-blue-neon justify-center">
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -57,7 +57,7 @@ const HomeSection = () => {
             </a>
           </motion.div>
         </div>
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.5 }} className="greetings-title flex-0 flex items-center justify-center relative">
+        <motion.div initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 0.5 }} className="greetings-title flex-0 flex items-center justify-center relative">
           <div className="static-overlay"></div>
           <img
             src="/profile.jpeg"
