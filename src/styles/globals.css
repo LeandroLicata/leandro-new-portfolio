@@ -48,12 +48,9 @@ body::after {
   border-right: 3px solid #c92ec7;
   width: 70%;
   position: absolute;
-  left: 50%; /* Cambiado a 50% */
+  left: 50%;
   top: 20%;
-  transform: translateX(-50%); /* Agregado para centrar */
-  -webkit-box-shadow: inset 200px 21px 194px 20px #12a6c03b;
-  -moz-box-shadow: inset 200px 21px 194px 20px #c012b73b;
-  box-shadow: inset 200px 21px 194px 20px #12c0953b;
+  transform: translateX(-50%);
 }
 
 .content-card::before {
@@ -261,3 +258,14 @@ body::after {
     width: 90%;
   }
 } */
+
+
+
+/* Media query para ajustar el diseño en pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .content-card {
+    width: 90%; /* Cambiar a un valor más grande para adaptarse mejor a pantallas más pequeñas */
+    top: 20%; /* Ajustar la posición vertical */
+    padding: 10px; 
+  }
+}

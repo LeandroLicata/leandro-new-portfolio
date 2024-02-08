@@ -48,8 +48,22 @@ const IconGrid: React.FC = () => {
     <div className="grid grid-cols-4 gap-4">
       {items.map((item, index) => (
         <div key={index} className="flex flex-col p-1 items-center">
-          <motion.span initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 1 }} className="text-5xl text-pink">{item.icon}</motion.span>
-          <motion.span initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 0.5 }} className="text-sm text-center pt-1">{item.name}</motion.span>
+          <motion.span
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 1 }}
+            className="text-5xl text-pink"
+          >
+            {item.icon}
+          </motion.span>
+          <motion.span
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            className="text-sm text-center pt-1"
+          >
+            {item.name}
+          </motion.span>
         </div>
       ))}
     </div>
