@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 const AboutSection = () => {
   return (
     <section>
-      <div className="about-section about-content-card text-light-blue p-5 overflow-auto">
-        <div className="text-sm">
+      <div className="about-section about-content-card text-light-blue p-5 h-[75%]">
+        <div className="text-xs md:text-sm overflow-auto h-[100%]">
           <motion.h1 initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 0.5 }} className="text-lg text-blue-neon">Acerca de mí</motion.h1>
           <motion.p initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 0.7 }} className="pt-5">
             ¡Hola! Soy <span className="text-pink">Leandro Licata</span>, un

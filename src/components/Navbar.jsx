@@ -46,12 +46,16 @@ const Navbar = ({ setCurrentSection }) => {
 
   return (
     <nav className="w-full fixed flex justify-center">
-      <ul className="text-light-blue flex justify-between items-center space-x-9 text-lg p-4 bg-black">
-        {navItems.map((item) => item)}
-      </ul>
-      {/* <ul className="grid grid-cols-2 gap-4 text-light-blue text-md p-4 bg-black justify-between items-center">
-        {navItems.map((item) => item)}
-      </ul> */}
+      <div className="hidden md:block">
+        <ul className="text-light-blue flex justify-between items-center space-x-9 text-lg p-4 bg-black">
+          {navItems.map((item) => item)}
+        </ul>
+      </div>
+      <div className="md:hidden">
+        <ul className=" grid grid-cols-2 gap-3 text-light-blue text-md p-3 bg-black justify-between items-center">
+          {navItems.map((item) => item)}
+        </ul>
+      </div>
     </nav>
   );
 };

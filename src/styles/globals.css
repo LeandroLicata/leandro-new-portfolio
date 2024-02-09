@@ -268,4 +268,11 @@ body::after {
     top: 20%; /* Ajustar la posición vertical */
     padding: 10px; 
   }
+
+  .about-content-card {
+    width: 90%; /* Cambiar a un valor más grande para adaptarse mejor a pantallas más pequeñas */
+    /* top: 20%;  */
+    padding: 10px; 
+    left: 5%;
+  }
 }
