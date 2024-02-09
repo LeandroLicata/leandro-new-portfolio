@@ -33,6 +33,7 @@ const HomeSection = () => {
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 1.1 }}
+            // className="text-blue-neon"
           >
             Desarrollador Web
           </motion.h1>
@@ -45,7 +46,7 @@ const HomeSection = () => {
             Transformo ideas en experiencias digitales.
           </motion.h1 >
           <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
+            initial={{ opacity: 0, scale: 1.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 1.5 }}
             className="text-4xl md:text-5xl pt-8 flex space-x-4 text-blue-neon justify-center"
@@ -93,7 +94,7 @@ const HomeSection = () => {
           </motion.div>
         </div>
         <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
+          initial={{ opacity: 0, scale: 1.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.5 }}
           className="hidden md:block greetings-title flex-0 flex items-center justify-center relative">

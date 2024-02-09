@@ -24,9 +24,8 @@ const arrowStyles: React.CSSProperties = {
 const NextArrow: React.FC<ArrowProps> = ({ onClick }) => (
   <motion.div
     initial={{ opacity: 0, scale: 0.5 }}
-    animate={{ opacity: 1, scale: 1 }}
+    animate={{ opacity: 1, scale: 1, rotate: 360 }}
     transition={{ duration: 0.5, delay: 1.5 }}
-    // className="slider-arrow"
     style={{ ...arrowStyles, right: "-100px" }}
     onClick={onClick}
   >
@@ -37,9 +36,8 @@ const NextArrow: React.FC<ArrowProps> = ({ onClick }) => (
 const PrevArrow: React.FC<ArrowProps> = ({ onClick }) => (
   <motion.div
     initial={{ opacity: 0, scale: 0.5 }}
-    animate={{ opacity: 1, scale: 1 }}
+    animate={{ opacity: 1, scale: 1, rotate: -360 }}
     transition={{ duration: 0.5, delay: 1.5 }}
-    // className="slider-arrow"
     style={{ ...arrowStyles, left: "-100px" }}
     onClick={onClick}
   >
@@ -56,21 +54,16 @@ const ProjectsSection = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    nextArrow: (
-      <NextArrow
-        onClick={() => setCurrentSlide(currentSlide + 1)}
-      />
-    ),
-    prevArrow: (
-      <PrevArrow
-        onClick={() => setCurrentSlide(currentSlide - 1)}
-      />
-    ),
+    nextArrow: <NextArrow onClick={() => setCurrentSlide(currentSlide + 1)} />,
+    prevArrow: <PrevArrow onClick={() => setCurrentSlide(currentSlide - 1)} />,
   };
 
   return (
     <section className="work-content-card relative">
-      <Slider {...settings} beforeChange={(oldIndex, newIndex) => setCurrentSlide(newIndex)}>
+      <Slider
+        {...settings}
+        beforeChange={(oldIndex, newIndex) => setCurrentSlide(newIndex)}
+      >
         {projectsData.map((project, index) => (
           <div key={index} className="p-8 text-light-blue">
             <AnimatePresence mode="wait">
@@ -85,14 +78,19 @@ const ProjectsSection = () => {
                     <div className="md:w-1/2">
                       <motion.img
                         key={index}
-                        initial={{ opacity: 0, scale: 0.5 }}
+                        initial={{ opacity: 0, scale: 1.5 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.5, delay: 0.5 }}
                         src={project.image}
                         alt={`${project.title} Project Image`}
                         className="w-full mb-4 md:mb-0"
                       />
-                      <motion.div initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 0.6 }} className="pt-3">
+                      <motion.div
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.5, delay: 0.6 }}
+                        className="pt-3"
+                      >
                         {project.links.map((link, linkIndex) => (
                           <a
                             key={linkIndex}
@@ -108,10 +106,20 @@ const ProjectsSection = () => {
                       </motion.div>
                     </div>
                     <div className="md:w-1/2 md:pl-8">
-                      <motion.h1 initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 0.7 }} className="text-xl font-bold mb-2 text-pink">
+                      <motion.h1
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.5, delay: 0.7 }}
+                        className="text-xl font-bold mb-2 text-pink"
+                      >
                         {project.title}
                       </motion.h1>
-                      <motion.p initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 0.8 }} className="mb-4 overflow-auto text-sm h-[16.5rem] pr-1">
+                      <motion.p
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.5, delay: 0.8 }}
+                        className="mb-4 overflow-auto text-sm h-[16.5rem] pr-1"
+                      >
                         {project.description}
                       </motion.p>
                     </div>

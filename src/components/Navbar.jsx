@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 const Navbar = ({ setCurrentSection }) => {
   const navItems = [
     <motion.li
+      key="home"
       className="hover:text-pink cursor-pointer"
       onClick={() => setCurrentSection("home")}
       initial={{ opacity: 0, scale: 0.5 }}
@@ -12,6 +13,7 @@ const Navbar = ({ setCurrentSection }) => {
       Inicio
     </motion.li>,
     <motion.li
+      key="about"
       className="hover:text-pink cursor-pointer"
       onClick={() => setCurrentSection("about")}
       initial={{ opacity: 0, scale: 0.5 }}
@@ -21,6 +23,7 @@ const Navbar = ({ setCurrentSection }) => {
       Acerca
     </motion.li>,
     <motion.li
+      key="projects"
       className="hover:text-pink cursor-pointer"
       onClick={() => setCurrentSection("projects")}
       initial={{ opacity: 0, scale: 0.5 }}
@@ -30,6 +33,7 @@ const Navbar = ({ setCurrentSection }) => {
       Proyectos
     </motion.li>,
     <motion.li
+      key="skills"
       className="hover:text-pink cursor-pointer"
       onClick={() => setCurrentSection("skills")}
       initial={{ opacity: 0, scale: 0.5 }}

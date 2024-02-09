@@ -49,7 +49,7 @@ const IconGrid: React.FC = () => {
       {items.map((item, index) => (
         <div key={index} className="flex flex-col p-1 items-center">
           <motion.span
-            initial={{ opacity: 0, scale: 0.5 }}
+            initial={{ opacity: 0, scale: 1.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 1 }}
             className="text-5xl text-pink"
