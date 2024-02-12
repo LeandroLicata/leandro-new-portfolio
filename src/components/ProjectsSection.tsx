@@ -120,7 +120,7 @@ const ProjectsSection = () => {
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.5, delay: 0.8 }}
-                        className="mb-4 overflow-auto text-xs md:text-sm h-[11rem] md:h-[16.5rem] pr-1"
+                        className="mb-4 overflow-auto text-xs md:text-sm h-[10rem] md:h-[16.5rem] pr-1"
                       >
                         {project.description}
                       </motion.p>
