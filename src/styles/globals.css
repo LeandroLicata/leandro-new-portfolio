@@ -259,18 +259,21 @@ body::after {
     width: 90%; /* Cambiar a un valor más grande para adaptarse mejor a pantallas más pequeñas */
     top: 20%; /* Ajustar la posición vertical */
     padding: 10px; 
+    top: 20%;
   }
 
   .about-content-card {
     width: 90%; 
     padding: 10px; 
     left: 5%;
+    top: 55%;
   }
 
   .work-content-card {
     width: 90%;
     padding: 0;
     height: 80%;
+    top: 55%;
   }
 
   .skills-content-card {
@@ -278,5 +281,7 @@ body::after {
     padding: 10px;
     left: 5%;
     height: 80%;
+    top: 55%;
+    margin-bottom: 10px;
   }
 }
