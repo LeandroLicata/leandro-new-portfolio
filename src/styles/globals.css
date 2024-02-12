@@ -272,7 +272,7 @@ body::after {
   .work-content-card {
     width: 90%;
     padding: 0;
-    height: 34rem;
+    /* height: 80%; */
     top: 55%;
   }
 
