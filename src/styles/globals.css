@@ -253,15 +253,7 @@ body::after {
 }
 
 
-/* @media (max-width: 768px) {
-  .content-card {
-    width: 90%;
-  }
-} */
 
-
-
-/* Media query para ajustar el diseño en pantallas más pequeñas */
 @media screen and (max-width: 768px) {
   .content-card {
     width: 90%; /* Cambiar a un valor más grande para adaptarse mejor a pantallas más pequeñas */
@@ -270,9 +262,14 @@ body::after {
   }
 
   .about-content-card {
-    width: 90%; /* Cambiar a un valor más grande para adaptarse mejor a pantallas más pequeñas */
-    /* top: 20%;  */
+    width: 90%; 
     padding: 10px; 
     left: 5%;
+  }
+
+  .work-content-card {
+    width: 90%;
+    padding: 10px;
+    height: 85%;
   }
 }

@@ -28,6 +28,7 @@ const NextArrow: React.FC<ArrowProps> = ({ onClick }) => (
     transition={{ duration: 0.5, delay: 1.5 }}
     style={{ ...arrowStyles, right: "-100px" }}
     onClick={onClick}
+    className="hidden md:block"
   >
     <SlArrowRight />
   </motion.div>
@@ -40,6 +41,7 @@ const PrevArrow: React.FC<ArrowProps> = ({ onClick }) => (
     transition={{ duration: 0.5, delay: 1.5 }}
     style={{ ...arrowStyles, left: "-100px" }}
     onClick={onClick}
+    className="hidden md:block"
   >
     <SlArrowLeft />
   </motion.div>
@@ -65,7 +67,7 @@ const ProjectsSection = () => {
         beforeChange={(oldIndex, newIndex) => setCurrentSlide(newIndex)}
       >
         {projectsData.map((project, index) => (
-          <div key={index} className="p-8 text-light-blue">
+          <div key={index} className="p-4 md:p-8 text-light-blue">
             <AnimatePresence mode="wait">
               {index === currentSlide && (
                 <motion.div
@@ -74,8 +76,8 @@ const ProjectsSection = () => {
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.5 }}
                 >
-                  <div className="w-full md:flex">
-                    <div className="md:w-1/2">
+                  <div className="w-full flex flex-col md:flex-row">
+                    <div className="md:w-1/2 md:order-firs order-last">
                       <motion.img
                         key={index}
                         initial={{ opacity: 0, scale: 1.5 }}
@@ -97,7 +99,7 @@ const ProjectsSection = () => {
                             href={link.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center text-blue-neon hover:text-pink text-sm text-center"
+                            className="flex items-center text-blue-neon hover:text-pink text-xs md:text-sm text-center"
                           >
                             {link.title}
                             <FaExternalLinkAlt className="ml-1" />{" "}
@@ -105,12 +107,12 @@ const ProjectsSection = () => {
                         ))}
                       </motion.div>
                     </div>
-                    <div className="md:w-1/2 md:pl-8">
+                    <div className="md:w-1/2 md:pl-8 md:order-last order-first">
                       <motion.h1
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.5, delay: 0.7 }}
-                        className="text-xl font-bold mb-2 text-pink"
+                        className="text-lg md:text-xl font-bold mb-2 text-pink"
                       >
                         {project.title}
                       </motion.h1>
@@ -118,7 +120,7 @@ const ProjectsSection = () => {
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.5, delay: 0.8 }}
-                        className="mb-4 overflow-auto text-sm h-[16.5rem] pr-1"
+                        className="mb-4 overflow-auto text-xs md:text-sm h-[14rem] md:h-[16.5rem] pr-1"
                       >
                         {project.description}
                       </motion.p>
