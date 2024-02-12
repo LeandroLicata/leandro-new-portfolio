@@ -269,7 +269,14 @@ body::after {
 
   .work-content-card {
     width: 90%;
+    padding: 0;
+    height: 80%;
+  }
+
+  .skills-content-card {
+    width: 90%;
     padding: 10px;
-    height: 85%;
+    left: 5%;
+    height: 80%;
   }
 }

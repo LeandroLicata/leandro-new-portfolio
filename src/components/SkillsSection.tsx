@@ -10,7 +10,7 @@ const SkillsSection = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className="pl-8 text-lg pb-5 text-blue-neon"
+          className="md:pl-8 text-md md:text-lg pb-5 text-blue-neon"
         >
           Mi stack de tecnologías:
         </motion.h1>
