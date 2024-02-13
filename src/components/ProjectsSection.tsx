@@ -6,6 +6,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 import projectsData from "./projectsData";
 import { motion, AnimatePresence } from "framer-motion";
+import { MdOutlineSwipe } from "react-icons/md";
 
 interface ArrowProps {
   onClick: MouseEventHandler;
@@ -60,8 +61,32 @@ const ProjectsSection = () => {
     prevArrow: <PrevArrow onClick={() => setCurrentSlide(currentSlide - 1)} />,
   };
 
+  const [animationComplete, setAnimationComplete] = useState(false);
+
+  const handleAnimationComplete = () => {
+    setAnimationComplete(true);
+  };
+
   return (
     <section className="work-content-card relative">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: [0, 1, 1, 1, 0] }}
+        transition={{ delay: 2, duration: 2 }}
+        onAnimationComplete={handleAnimationComplete}
+        className={
+          animationComplete
+            ? "absolute top-0 left-0 w-full h-full flex justify-center items-center"
+            : "absolute top-0 left-0 w-full h-full flex justify-center items-center z-10"
+        }
+      >
+        <span className="bg-black text-white text-center py-2 flex flex-col items-center">
+          <span className="text-5xl">
+            <MdOutlineSwipe />
+          </span>
+          Desliza para cambiar de proyecto
+        </span>
+      </motion.div>
       <Slider
         {...settings}
         beforeChange={(oldIndex, newIndex) => setCurrentSlide(newIndex)}
@@ -116,14 +141,14 @@ const ProjectsSection = () => {
                       >
                         {project.title}
                       </motion.h1>
-                      <motion.p
+                      <motion.div
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.5, delay: 0.8 }}
                         className="mb-4 overflow-auto text-xs md:text-sm h-[20vh] md:h-[16.5rem] pr-1"
                       >
                         {project.description}
-                      </motion.p>
+                      </motion.div>
                     </div>
                   </div>
                 </motion.div>

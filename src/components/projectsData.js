@@ -2,7 +2,7 @@ const projectsData = [
   {
     title: "Timbring",
     description: (
-      <>
+      <div>
         <p>Sitio web en el trabajé durante 3 meses como pasante.</p>
         <p className="mt-2">
           <span className="text-pink">Timbring</span> es un Servicio de
@@ -39,7 +39,7 @@ const projectsData = [
           manera segura y eficiente en caso de olvido o pérdida de acceso a sus
           cuentas.
         </p>
-      </>
+      </div>
     ),
     image: "/Timbring.jpg",
     links: [{ title: "Link", url: "https://www.timbring.com/" }],
@@ -47,7 +47,7 @@ const projectsData = [
   {
     title: "Cocktail App",
     description: (
-      <>
+      <div>
         <p>
           Proyecto personal de Front-End en desarrollo en el cual consumo datos
           de una <span className="text-pink">API(TheCocktailDB)</span>. De
@@ -61,7 +61,7 @@ const projectsData = [
           <span className="text-pink">Styled Components</span>y{" "}
           <span className="text-pink">Redux Toolkit</span>.
         </p>
-      </>
+      </div>
     ),
     image: "/Cocktail_App.jpg",
     links: [
@@ -78,7 +78,7 @@ const projectsData = [
   {
     title: "Gamepedia",
     description: (
-      <>
+      <div>
         <p>
           Proyecto personal que desarrollé utilizando la{" "}
           <span className="text-pink">API de RAWG</span>, en que los usarios
@@ -102,7 +102,7 @@ const projectsData = [
           <span className="text-pink">Bootstrap</span> para garantizar una
           experiencia de usuario atractiva y funcional.
         </p>
-      </>
+      </div>
     ),
     image: "/Gamepedia.jpg",
     links: [
@@ -123,7 +123,7 @@ const projectsData = [
   {
     title: "Novelty Books",
     description: (
-      <>
+      <div>
         <p>
           Como parte de mi formación en programación, participé en un proyecto
           final grupal llamado <span className="text-pink">Novelty Books</span>{" "}
@@ -147,7 +147,7 @@ const projectsData = [
           <span className="text-pink">HTML5</span> para desarrollar un
           e-commerce de libros físicos.
         </p>
-      </>
+      </div>
     ),
     image: "/Novelty_Books.jpg",
     links: [
