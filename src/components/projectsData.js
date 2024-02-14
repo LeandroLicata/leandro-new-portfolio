@@ -22,8 +22,8 @@ const projectsData = [
           manejo del estado global y las peticiones al backend.
         </p>
         <p className="mt-2">
-          Brindé asistencia a mis compañeros, apoyándoles principalmente en
-          temas relacionados con <span className="text-pink">Next</span> y{" "}
+          Brindé asistencia a mis compañeros, apoyándolos en temas relacionados
+          con <span className="text-pink">Next</span> y{" "}
           <span className="text-pink">Redux Toolkit</span>.
         </p>
         <p className="mt-2">

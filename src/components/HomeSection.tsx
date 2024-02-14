@@ -19,7 +19,7 @@ const HomeSection = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.7 }}
           >
-            Mi Nombre es
+            Mi nombre es
           </motion.h1>
           <motion.span
             initial={{ opacity: 0, scale: 0.5 }}
