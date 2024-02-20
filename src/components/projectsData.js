@@ -3,7 +3,7 @@ const projectsData = [
     title: "Timbring",
     description: (
       <div>
-        <p>Sitio web en el trabajé durante 3 meses como pasante.</p>
+        <p>Sitio web en el trabajé.</p>
         <p className="mt-2">
           <span className="text-pink">Timbring</span> es un Servicio de
           Optimización de Entregas en E-commerce: Mejorando la experiencia del
@@ -43,37 +43,6 @@ const projectsData = [
     ),
     image: "/Timbring.jpg",
     links: [{ title: "Link", url: "https://www.timbring.com/" }],
-  },
-  {
-    title: "Cocktail App",
-    description: (
-      <div>
-        <p>
-          Proyecto personal de Front-End en desarrollo en el cual consumo datos
-          de una <span className="text-pink">API(TheCocktailDB)</span>. De
-          momento podemos buscar tragos por nombre. Planeo implementar mas
-          funcionalidades como un filtro para poder buscar por ingredientes y
-          categorías.
-        </p>
-        <p className="pt-2">
-          Para realización de este proyecto utilicé{" "}
-          <span className="text-pink">React</span> con{" "}
-          <span className="text-pink">Styled Components</span>y{" "}
-          <span className="text-pink">Redux Toolkit</span>.
-        </p>
-      </div>
-    ),
-    image: "/Cocktail_App.jpg",
-    links: [
-      {
-        title: "Repositorio",
-        url: "https://github.com/LeandroLicata/cocktail-app",
-      },
-      {
-        title: "Deploy",
-        url: "https://cocktail-app-blond.vercel.app/",
-      },
-    ],
   },
   {
     title: "Gamepedia",
@@ -162,6 +131,37 @@ const projectsData = [
       {
         title: "Video Presentación",
         url: "https://www.youtube.com/watch?v=6JF0WrhJlw0",
+      },
+    ],
+  },
+  {
+    title: "Cocktail App",
+    description: (
+      <div>
+        <p>
+          Proyecto personal de Front-End en desarrollo en el cual consumo datos
+          de una <span className="text-pink">API(TheCocktailDB)</span>. De
+          momento podemos buscar tragos por nombre. Planeo implementar mas
+          funcionalidades como un filtro para poder buscar por ingredientes y
+          categorías.
+        </p>
+        <p className="pt-2">
+          Para realización de este proyecto utilicé{" "}
+          <span className="text-pink">React</span> con{" "}
+          <span className="text-pink">Styled Components</span>y{" "}
+          <span className="text-pink">Redux Toolkit</span>.
+        </p>
+      </div>
+    ),
+    image: "/Cocktail_App.jpg",
+    links: [
+      {
+        title: "Repositorio",
+        url: "https://github.com/LeandroLicata/cocktail-app",
+      },
+      {
+        title: "Deploy",
+        url: "https://cocktail-app-blond.vercel.app/",
       },
     ],
   },
