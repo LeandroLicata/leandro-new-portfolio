@@ -5,6 +5,7 @@ import HomeSection from "@/components/HomeSection";
 import AboutSection from "@/components/AboutSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import SkillsSection from "@/components/SkillsSection";
+import Head from "next/head";
 
 export default function Home() {
   const [currentSection, setCurrentSection] = useState("home");
@@ -26,6 +27,9 @@ export default function Home() {
 
   return (
     <main>
+      <Head>
+        <title>Leandro Licata Portfolio</title>
+      </Head>
       <Navbar setCurrentSection={setCurrentSection} />
       <div className="container mx-auto flex items-center justify-center">
         <AnimatePresence mode="wait">
