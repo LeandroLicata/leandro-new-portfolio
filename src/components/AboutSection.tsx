@@ -19,10 +19,11 @@ const AboutSection = () => {
             transition={{ duration: 0.5, delay: 0.7 }}
             className="pt-5"
           >
-            ¡Soy <span className="text-pink">Leandro</span>! Me formé como
-            Técnico Electricista y Técnico en Armado y Reparación de PC y, tras
-            años ejerciendo, me pasé al mundo de la Programación. Desde entonces
-            disfruto creando experiencias web para los usuarios.
+            ¡Hola! Soy <span className="text-pink">Leandro</span>. Inicialmente,
+            me formé como Técnico Electricista y Técnico en Armado y Reparación
+            de PC, pero con el tiempo, me sumergí en el mundo de la
+            Programación, donde encontré mi verdadera pasión. Desde entonces, me
+            encanta crear experiencias web para los usuarios.
           </motion.p>
           <motion.p
             initial={{ opacity: 0, scale: 0.5 }}
@@ -30,7 +31,7 @@ const AboutSection = () => {
             transition={{ duration: 0.5, delay: 0.9 }}
             className="pt-5"
           >
-            Entre mis éxitos destaco que, durante mi tiempo en{" "}
+            Uno de mis logros más destacados fue durante mi tiempo en{" "}
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -39,8 +40,8 @@ const AboutSection = () => {
             >
               Timbring
             </a>
-            , haber migrado exitosamente la autenticación a NextAuth y haber
-            trabajado en la optimización del formulario de registro. Esto
+            , donde lideré con éxito la migración de la autenticación a NextAuth
+            y trabajé en la optimización del formulario de registro. Este cambio
             permitió que cientos de usuarios se registraran e iniciaran sesión
             de manera más rápida y eficiente.
           </motion.p>
@@ -50,17 +51,20 @@ const AboutSection = () => {
             transition={{ duration: 0.5, delay: 1.1 }}
             className="pt-5"
           >
-            Cuento con experiencia en el desarrollo de aplicaciones web, y entre
-            mis proyectos destacados se encuentra Gamepedia. Este proyecto me
-            permitió combinar dos de mis pasiones: la programación y los
-            videojuegos. En <a
+            Tengo experiencia en el desarrollo de aplicaciones web, y uno de mis
+            proyectos más notables es{" "}
+            <a
               target="_blank"
               rel="noopener noreferrer"
               href="https://gamepedia-gaming.vercel.app/"
               className="text-pink"
-            >Gamepedia</a>, ayudé a los usuarios a obtener
-            información sobre cualquier videojuego y a ver capturas de pantalla
-            de los mismos. ¡Te invito a echarle un vistazo!
+            >
+              Gamepedia
+            </a>
+            . Este proyecto me permitió combinar dos de mis mayores pasiones: la
+            programación y los videojuegos. En Gamepedia, ayudé a los usuarios a
+            acceder a información detallada sobre cualquier videojuego y
+            disfrutar de capturas de pantalla. ¡Te invito a explorarlo!
           </motion.p>
         </div>
       </div>
