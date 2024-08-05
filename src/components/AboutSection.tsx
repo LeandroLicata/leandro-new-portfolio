@@ -11,7 +11,7 @@ const AboutSection = () => {
             transition={{ duration: 0.5, delay: 0.5 }}
             className="text-lg text-blue-neon"
           >
-            Acerca de mí
+            Sobre mí
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, scale: 0.5 }}

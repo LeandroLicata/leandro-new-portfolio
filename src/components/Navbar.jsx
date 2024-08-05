@@ -20,7 +20,7 @@ const Navbar = ({ setCurrentSection }) => {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5, delay: 0.1 }}
     >
-      Acerca
+      Sobre mí
     </motion.li>,
     <motion.li
       key="projects"
